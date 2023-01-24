@@ -1,2 +1,6 @@
-<h1>Books#show</h1>
-<p>Find me in app/views/books/show.html.erb</p>
+<h2><%= @book.name %></h2>
+
+<%= image_tag @book.image, :class => 'book-show-img' %>
+
+<%= link_to (button_tag 'Back'), bookmark_path %>
+

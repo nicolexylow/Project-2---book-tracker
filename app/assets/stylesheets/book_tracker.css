@@ -1,3 +1,7 @@
 .bookmark-img, .book-img {
     height: 10em;
 }
+
+.book-show-img {
+    height: 20em;
+}

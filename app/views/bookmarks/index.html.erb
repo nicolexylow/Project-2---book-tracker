@@ -1,7 +1,6 @@
 <h1>Bookmarks</h1>
 
 <p><%= link_to 'New bookmark', new_bookmark_path %></p>
-<%= raise 'errors' %>
 
 <% @current_user.bookmarks.each do |bookmark| %>
     <%= link_to (image_tag bookmark.image, :class => 'bookmark-img'), bookmark %>
