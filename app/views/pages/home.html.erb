@@ -1,0 +1,11 @@
+<% if @current_user.present? %>
+
+    <h1><%= @current_user.name %>'s Book Tracker</h1>
+
+    <h2><%= link_to 'Bookmarks', bookmarks_path %></h2>
+
+    <% @current_user.bookmarks.each do |bookmark| %>
+        <%= link_to (image_tag bookmark.image, :class => 'bookmark-img'), bookmark %>
+        <p><%= link_to (bookmark.name), bookmark %></p>
+    <% end %>
+<% end %>
