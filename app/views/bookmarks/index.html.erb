@@ -5,7 +5,7 @@
 <div class="bookmarks">
     <% @current_user.bookmarks.each do |bookmark| %>
         <div class="bookmark-container">
-            <%= link_to (image_tag bookmark.image, :class => 'bookmark-img'), bookmark %>
+            <%= link_to (cl_image_tag bookmark.image, :class => 'bookmark-img'), bookmark %>
             <h3><%= link_to (bookmark.name), bookmark %></h3>
         </div>
         

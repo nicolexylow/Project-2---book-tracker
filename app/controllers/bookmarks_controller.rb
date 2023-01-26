@@ -18,7 +18,17 @@ class BookmarksController < ApplicationController
   end
 
   def create
+
     bookmark = Bookmark.create bookmark_params
+
+    if params[:file].present?
+      # Then call Cloudinary's upload method, passing in the file in params
+      req = Cloudinary::Uploader.upload(params[:file])
+      # Using the public_id allows us to use Cloudinary's powerful image 
+      # transformation methods.
+      bookmark.image = req["public_id"] # this is an URL
+    end 
+    
     @current_user.bookmarks << bookmark
     redirect_to bookmarks_path
   end 
@@ -29,6 +39,12 @@ class BookmarksController < ApplicationController
 
   def update
     bookmark = Bookmark.find params[:id]
+
+    if params[:file].present?
+      req = Cloudinary::Uploader.upload(params[:file])
+      bookmark.image = req["public_id"]
+    end
+    
     bookmark.update bookmark_params
     redirect_to bookmark
   end
