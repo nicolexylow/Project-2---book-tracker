@@ -12,8 +12,8 @@ puts "#{Bookmark.count} bookmarks"
 
 # BOOKS
 Book.destroy_all
-b1 = Book.create :name => 'Eat That Frog!', :image => 'https://m.media-amazon.com/images/I/41fw4Cjip8L.jpg', author: 'Brian Tracy', :published => '2008-11-13', :pages => 144, :language => 'English'
-b2 = Book.create :name => 'Harry Potter', :image => 'https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/4088/9781408855676.jpg', author: 'J.K. Rowling', :published => '2015-12-14', :pages => 223, :language => 'English'
+b1 = Book.create :name => 'Eat That Frog!', :image => 'https://m.media-amazon.com/images/I/41fw4Cjip8L.jpg', :author => 'Brian Tracy', :published => '2008-11-13', :pages => 144, :language => 'en'
+b2 = Book.create :name => 'Harry Potter', :image => 'https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/4088/9781408855676.jpg', :author => 'J.K. Rowling', :published => '2015-12-14', :pages => 223, :language => 'en'
 puts "#{Book.count} books"
 
 # GENRES

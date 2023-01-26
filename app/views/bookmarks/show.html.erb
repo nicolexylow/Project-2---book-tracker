@@ -1,6 +1,16 @@
-<h1><%= @bookmark.name %></h1>
+<%= image_tag @bookmark.image, :class => 'bookmark-img bookmark-img-top'  %>
+<h2 class="h2-top"><%= @bookmark.name %></h2>
 
-<% @bookmark.books.each do |book| %>
-    <%= link_to (image_tag book.image, :class => 'book-img'), book %>
-<% end %>
+<div class="book-container">
+    <% @bookmark.books.each do |book| %>
+        <%= link_to (image_tag book.image, :class => 'book-img'), bookmark_book_path(@bookmark, book) %>
+    <% end %>
+</div>
+
+
+<div class="controls">
+    <div><%= link_to (button_tag 'Edit bookmark'), edit_bookmark_path(@bookmark.id) %></div>
+    <div><%= link_to (button_tag 'Delete bookmark'), bookmark_path(@bookmark.id), :method => 'delete' %></div>
+</div>
+
 

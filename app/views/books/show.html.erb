@@ -1,6 +1,18 @@
-<h2><%= @book.name %></h2>
+<h1 class="h1-top"><%= @bookmark.name %></h1>
 
-<%= image_tag @book.image, :class => 'book-show-img' %>
+<div class="book-info-container">
+    <%= image_tag @book.image, :class => 'book-show-img' %>
 
-<div><%= link_to (button_tag 'Back'), bookmark_path %></div>
+    <ul>
+        <li>Title: <%= @book.name %></li>
+        <li>Author: <%= @book.author %></li>
+        <li>Published: <%= @book.published.strftime '%e %B, %Y' %></li>
+        <li>Pages: <%= @book.pages %></li>
+        <li>Language: <%= @book.language %></li>
+    </ul>
+</div>
+
+
+<div class="delete-btn"><%= link_to (button_tag 'Delete book'), @book, :method => 'delete' %></div>
+<div class="back-btn"><%= link_to (button_tag 'Back'), :back %></div>
 

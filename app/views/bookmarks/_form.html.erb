@@ -1,0 +1,11 @@
+<%= form_for @bookmark do |f| %>
+    <div class="form-container">
+        <%= f.label :name %>
+        <%= f.text_field :name, :required => true %>
+
+        <%= f.label :image %>
+        <%= f.text_field :image %>
+
+        <%= f.submit %>
+    </div>    
+<% end %>

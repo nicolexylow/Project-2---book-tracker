@@ -1,7 +1,133 @@
-.bookmark-img, .book-img {
+body {
+    margin: 0;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.bookmark-img{
     height: 10em;
+    width: 10em;
+    object-fit: cover;
+    border-radius: 1000px;
+    border: 3px solid black;
+}
+
+.book-img {
+    height: 12em;
+    margin: 0 20px;
 }
 
 .book-show-img {
     height: 20em;
+}
+
+nav {
+    background-color: grey;
+    padding: 20px 0;
+}
+
+nav a {
+    margin: 0 20px;
+    color: white;
+}
+
+.h1-top {
+    margin: 50px 0 40px;
+}
+
+form {
+    display: inline-block;
+    padding: 35px 100px;
+    background-color: grey;
+    color: white;
+    border-radius: 10px;
+}
+
+.bookmark-container {
+    display: inline-flex;
+    flex-direction: column;
+    margin: 0 20px;
+}
+
+.h2-bottom {
+    margin: 100px 0 30px 0;
+}
+
+.h2-top {
+    margin-bottom: 50px;
+}
+
+h3 {
+    margin-bottom: 15px;
+}
+
+.bookmarks {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 30px 0 10px 0;
+}
+
+.bookmark-img-top {
+    margin-top: 50px;
+}
+
+.book-container {
+    padding: 30px 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+ul {
+    padding: 0;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.book-info-container {
+    display: inline-block;
+    padding: 40px 150px 20px 150px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.delete-btn {
+    margin-bottom: 20px;
+}
+
+.back-btn {
+    margin-bottom: 60px;
+}
+
+.new-bookmark-btn {
+    margin-bottom: 25px;
+}
+
+.controls div {
+    margin-bottom: 20px;
+}
+
+.controls div:nth-of-type(2) {
+    margin-bottom: 60px;
+}
+
+.bookmark-form {
+    margin-bottom: 30px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.form-container input {
+    margin-bottom: 20px;
+}
+
+.form-container input:last-of-type {
+    margin: 10px 0 0 0;
 }

@@ -1,0 +1,4 @@
+<%= form_for @book do |f| %>
+    <%= f.label :bookmark_id %>
+    <%= f.select :bookmark_id, Bookmark.pluck(:name, :id), :include_blank => false %>
+<% end %>

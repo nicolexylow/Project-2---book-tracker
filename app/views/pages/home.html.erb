@@ -1,11 +1,24 @@
 <% if @current_user.present? %>
 
-    <h1><%= @current_user.name %>'s Book Tracker</h1>
+    <h1 class="h1-top"><%= @current_user.name %>'s Book Tracker</h1>
 
-    <h2><%= link_to 'Bookmarks', bookmarks_path %></h2>
+     <form action="/books" >
+        <label>
+            Book Title
+            <input name="title" required>
+        </label>
 
-    <% @current_user.bookmarks.each do |bookmark| %>
-        <%= link_to (image_tag bookmark.image, :class => 'bookmark-img'), bookmark %>
-        <p><%= link_to (bookmark.name), bookmark %></p>
-    <% end %>
+        <button>Search</button>
+    </form>
+
+    <h2 class="h2-bottom"><%= link_to 'Bookmarks', bookmarks_path %></h2>
+
+    <div class="bookmarks">
+        <% @current_user.bookmarks.each do |bookmark| %>
+            <div class="bookmark-container">
+                <%= link_to (image_tag bookmark.image, :class => 'bookmark-img'), bookmark %>
+                <h3><%= link_to (bookmark.name), bookmark %></h3>
+            </div>         
+        <% end %>
+    </div>
 <% end %>
