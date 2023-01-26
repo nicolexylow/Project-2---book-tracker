@@ -2,6 +2,8 @@ body {
     margin: 0;
     font-family: sans-serif;
     text-align: center;
+    background-image: url('background.jpg');
+    background-size: cover;
 }
 
 .bookmark-img{
@@ -22,24 +24,22 @@ body {
 }
 
 nav {
-    background-color: grey;
+    background-color: rgb(221, 164, 110);
     padding: 20px 0;
 }
 
 nav a {
     margin: 0 20px;
-    color: white;
 }
 
 .h1-top {
-    margin: 50px 0 40px;
+    margin: 50px 0 40px 0;
 }
 
 form {
     display: inline-block;
     padding: 35px 100px;
-    background-color: grey;
-    color: white;
+    background-color: rgb(221, 164, 110);
     border-radius: 10px;
 }
 
@@ -62,7 +62,7 @@ h3 {
 }
 
 .bookmarks {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.15);
     padding: 30px 0 10px 0;
 }
 
@@ -72,7 +72,7 @@ h3 {
 
 .book-container {
     padding: 30px 0;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.15);
     margin-bottom: 30px;
 }
 
@@ -89,7 +89,7 @@ ul {
 .book-info-container {
     display: inline-block;
     padding: 40px 150px 20px 150px;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.15);
     border-radius: 15px;
     margin-bottom: 30px;
 }
@@ -103,7 +103,7 @@ ul {
 }
 
 .new-bookmark-btn {
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 .controls div {
@@ -130,4 +130,41 @@ ul {
 
 .form-container input:last-of-type {
     margin: 10px 0 0 0;
+}
+
+button {
+    font-size: 15px;
+    background-color: rgb(221, 164, 110);
+    padding: 5px;
+    box-shadow: 1px 1px rgb(223, 223, 223);
+    border-radius: 5px;
+}
+
+a {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+.search-btn, .add-book-btn {
+    background-color: white;
+}
+
+select, .search-input, .form-container input {
+    font-size: 15px;
+    padding: 4px 5px;
+    border-radius: 5px;
+}
+
+.form-container label {
+    margin-bottom: 3px;
+} 
+
+.all-users {
+    display: inline-block;
+    padding: 30px 100px;
+    background-color: rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
 }

@@ -1,5 +1,7 @@
-<h1>All Users (ADMIN ONLY)</h1>
+<h1 class="h1-top">All Users (ADMIN ONLY)</h1>
 
-<% @users.each do |user| %>
-    <p><%= user.email %></p>
-<% end %>
+<div class="all-users">
+    <% @users.each do |user| %>
+        <p><%= user.email %></p>
+    <% end %>
+</div>

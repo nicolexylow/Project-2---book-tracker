@@ -26,6 +26,10 @@
       <% end %>
     </nav>
 
+    <% unless @current_user.present? %>
+      <h1 class="h1-top">Book Tracker</h1>
+    <% end %>
+
     <%= yield %>
 
   </body>

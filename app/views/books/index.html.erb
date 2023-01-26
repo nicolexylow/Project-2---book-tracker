@@ -14,7 +14,7 @@
 
 <div class="bookmark-form">
     <%= form_tag bookmarks_add_path do %>
-        <%= select_tag(:bookmark, options_for_select(Bookmark.pluck(:name, :id))) %>
+        <%= select_tag(:bookmark, options_for_select(@current_user.bookmarks.pluck(:name, :id))) %>
 
         <%= hidden_field_tag :image, @image %>
         <%= hidden_field_tag :title, @title %>
@@ -22,7 +22,7 @@
         <%= hidden_field_tag :pages, @pages %>
         <%= hidden_field_tag :language, @language %>
 
-        <%= button_tag 'Add to bookmark' %>
+        <%= button_tag 'Add to bookmark', :class => 'add-book-btn' %>
     <% end %>
 </div>
 
