@@ -1,24 +1,40 @@
-# README
+# Book Tracker (Ruby on Rails)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Access the app here:
+https://project-2-book-tracker.herokuapp.com/
 
-Things you may want to cover:
+<br>  
 
-* Ruby version
+---
+<br>   
 
-* System dependencies
+## What is it?
 
-* Configuration
+This book tracker aims to help organise all of your books digitally with the help of bookmark categories. Think of it as virtual libraries for any book that you have or future books that you want!
 
-* Database creation
+<br>  
 
-* Database initialization
+### How to use:
+1. If you don't already have an account, navigate to the sign up page and create an account.
+2. If you have an account, navigate to the sign in page and log in.
+3. Navigate to the bookmarks page and create a new bookmark.
+4. Navigate to the home page and in the search bar, search for any book to find information about it.
+5. You have the option to add the book to any of your bookmarks.
+6. In any of your bookmarks, you can edit the name and image at anytime or you could delete a book from it by clicking on the book in that bookmark and pressing the 'delete book' button at the bottom of the page.
 
-* How to run the test suite
+<br>  
 
-* Services (job queues, cache servers, search engines, etc.)
+### Example use cases:
+<img src="app/assets/images/emma.png" alt="Emma's Bookmark" width="500">
+<img src="app/assets/images/wishlist.png" alt="Wishlist Bookmark" width="500">
+<img src="app/assets/images/cooking.png" alt="Cooking Bookmark" width="500">
+<img src="app/assets/images/book_info.png" alt="Book Information" width="440">
 
-* Deployment instructions
+<br>  
 
-* ...
+---
+<br> 
+
+## Design Prototype
+
+![Figma Prototype](app/assets/images/figma_prototype.png)

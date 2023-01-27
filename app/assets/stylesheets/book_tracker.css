@@ -4,6 +4,7 @@ body {
     text-align: center;
     background-image: url('background.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .bookmark-img{
@@ -167,4 +168,8 @@ select, .search-input, .form-container input {
     padding: 30px 100px;
     background-color: rgba(0, 0, 0, 0.15);
     border-radius: 10px;
+}
+
+.cancel-btn {
+    margin-top: 30px;
 }
